@@ -36,24 +36,21 @@ graph TD
 📚 Technical Summary: OSI Model | Resumo Técnico: Modelo OSI
 ```mermaid
 graph TD
-    subgraph Upper_Layers [Upper Layers: Host Integration]
-        L7[7. Application / Aplicação] --- L6[6. Presentation / Apresentação]
-        L6 --- L5[5. Session / Sessão]
+    subgraph OSI_MODEL [OSI Reference Model]
+        direction TB
+        L7[7. Application / Aplicação] --> L6[6. Presentation / Apresentação]
+        L6 --> L5[5. Session / Sessão]
+        L5 --> L4[4. Transport / Transporte]
+        L4 --> L3[3. Network / Rede]
+        L3 --> L2[2. Data Link / Enlace]
+        L2 --> L1[1. Physical / Física]
     end
 
-    subgraph Transport_Layer [Heart of OSI]
-        L4[4. Transport / Transporte]
-    end
-
-    subgraph Lower_Layers [Lower Layers: Network Data Flow]
-        L3[3. Network / Rede] --- L2[2. Data Link / Enlace]
-        L2 --- L1[1. Physical / Física]
-    end
-
-    style Upper_Layers fill:#e1f5fe,stroke:#01579b
-    style Transport_Layer fill:#fff9c4,stroke:#fbc02d
-    style Lower_Layers fill:#f1f8e9,stroke:#33691e
-    style L4 font-weight:bold
+    %% Estilização para ficar Profissional
+    style L7 fill:#ff1c1c,stroke:#fff,color:#fff
+    style L4 fill:#00ff41,stroke:#000,color:#000
+    style L1 fill:#2196f3,stroke:#fff,color:#fff
+    style OSI_MODEL fill:#f4f4f4,stroke:#333,stroke-width:2px
 ```
 
     
