@@ -34,14 +34,29 @@ graph TD
         PT: Scripts Python para configuração e automação de rede.
 
 📚 Technical Summary: OSI Model | Resumo Técnico: Modelo OSI
-Layer / Camada	Name / Nome	Function / Função Principal	PDU
-7	Application	Interface com o usuário (HTTP, DNS, SSH)	Data / Dados
-6	Presentation	Formatação e Criptografia de dados	Data / Dados
-5	Session	Gerenciamento de comunicação entre hosts	Data / Dados
-4	Transport	Conexão fim-a-fim e confiabilidade (TCP/UDP)	Segments
-3	Network	Endereçamento lógico (IP) e Roteamento	Packets
-2	Data Link	Endereçamento físico (MAC) e Comutação	Frames
-1	Physical	Transmissão de sinais elétricos/ópticos	Bits
+```mermaid
+graph TD
+    subgraph Upper_Layers [Upper Layers: Host Integration]
+        L7[7. Application / Aplicação] --- L6[6. Presentation / Apresentação]
+        L6 --- L5[5. Session / Sessão]
+    end
+
+    subgraph Transport_Layer [Heart of OSI]
+        L4[4. Transport / Transporte]
+    end
+
+    subgraph Lower_Layers [Lower Layers: Network Data Flow]
+        L3[3. Network / Rede] --- L2[2. Data Link / Enlace]
+        L2 --- L1[1. Physical / Física]
+    end
+
+    style Upper_Layers fill:#e1f5fe,stroke:#01579b
+    style Transport_Layer fill:#fff9c4,stroke:#fbc02d
+    style Lower_Layers fill:#f1f8e9,stroke:#33691e
+    style L4 font-weight:bold
+```
+
+    
 🚀 Professional Goals | Objetivos Profissionais
 
     [ ] Complete Module 1: Introduction to Networks (ITN)
