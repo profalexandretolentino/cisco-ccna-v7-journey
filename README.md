@@ -1,63 +1,292 @@
-# 🌐 Cisco CCNA v7 Journey | Jornada CCNA
+# 🚀 Infrastructure, Networking & DevOps Labs
 
-**English:** This repository documents my progress through the Cisco CCNA v7 certification, focusing on "Introduction to Networks" (ITN). It includes lab notes, Packet Tracer files, and network automation scripts as part of my professional roadmap for 2027.  
-
-**Português:** Este repositório documenta meu progresso na certificação Cisco CCNA v7, com foco em "Introdução a Redes" (ITN). Inclui notas de laboratório, arquivos do Packet Tracer e scripts de automação como parte do meu roadmap profissional para 2027.
+![Cisco](https://img.shields.io/badge/Cisco-CCNA-blue)
+![Python](https://img.shields.io/badge/Python-Automation-yellow)
+![Linux](https://img.shields.io/badge/Linux-WSL2-orange)
+![Docker](https://img.shields.io/badge/Docker-Containers-blue)
+![Git](https://img.shields.io/badge/Git-Version_Control-black)
+![Status](https://img.shields.io/badge/Status-In_Progress-success)
 
 ---
 
-## 🗺️ Study Roadmap | Roteiro de Estudos
+# 📖 About | Sobre
 
-**EN:** Organized following the official Cisco Networking Academy curriculum.  
-**PT:** Organizado seguindo o currículo oficial da Cisco Networking Academy.
+### 🇺🇸 English
+
+This repository contains hands-on labs, study notes, automation scripts, and infrastructure projects focused on networking, Linux systems, and DevOps practices.
+
+The main goal of this repository is to document my professional learning journey through Cisco CCNA, infrastructure engineering, network automation, Linux administration, and cloud-native technologies.
+
+This repository also serves as a long-term technical portfolio for future opportunities in DevOps, Infrastructure Engineering, Cloud Computing, and Network Automation.
+
+---
+
+### 🇧🇷 Português
+
+Este repositório contém laboratórios práticos, anotações de estudo, scripts de automação e projetos de infraestrutura focados em redes, sistemas Linux e práticas DevOps.
+
+O principal objetivo deste repositório é documentar minha jornada profissional de aprendizado em Cisco CCNA, engenharia de infraestrutura, automação de redes, administração Linux e tecnologias cloud-native.
+
+Este repositório também funciona como um portfólio técnico de longo prazo para futuras oportunidades em DevOps, Engenharia de Infraestrutura, Cloud Computing e Automação de Redes.
+
+---
+
+# 🛠️ Technologies & Tools | Tecnologias e Ferramentas
+
+## Networking
+- Cisco CCNA
+- Packet Tracer
+- TCP/IP
+- IPv4 & IPv6
+- Routing & Switching
+- VLANs
+- Network Troubleshooting
+
+## Infrastructure & DevOps
+- Linux (WSL2 / Ubuntu)
+- Bash Scripting
+- Python Automation
+- Docker
+- Git & GitHub
+- VS Code
+
+## Future Technologies
+- Kubernetes
+- Terraform
+- AWS Cloud
+- Cisco DevNet
+- Monitoring & Observability
+
+---
+
+# 🖥️ Development Environment | Ambiente de Desenvolvimento
+
+- Windows 11
+- WSL2 (Windows Subsystem for Linux)
+- Ubuntu Linux
+- Visual Studio Code
+- Cisco Packet Tracer
+
+---
+
+# 📂 Repository Structure | Estrutura do Repositório
+
+```bash
+infrastructure-and-network-labs/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   ├── roadmap.md
+│   ├── study-notes.md
+│   ├── certifications.md
+│   └── career-progress.md
+│
+├── ccna/
+│   │
+│   ├── ccna1-introduction-to-networks/
+│   │   │
+│   │   ├── module-01-network-fundamentals/
+│   │   ├── module-02-basic-configurations/
+│   │   ├── module-03-protocols-and-models/
+│   │   ├── module-04-physical-layer/
+│   │   ├── module-05-number-systems/
+│   │   ├── module-06-data-link-layer/
+│   │   ├── module-07-ethernet-switching/
+│   │   ├── module-08-network-layer/
+│   │   ├── module-09-address-resolution/
+│   │   ├── module-10-basic-router-config/
+│   │   ├── module-11-ipv4-addressing/
+│   │   ├── module-12-ipv6-addressing/
+│   │   ├── module-13-icmp/
+│   │   ├── module-14-transport-layer/
+│   │   ├── module-15-application-layer/
+│   │   ├── module-16-network-security/
+│   │   └── module-17-build-a-small-network/
+│   │
+│   ├── ccna2-switching-routing-wireless/
+│   │
+│   └── ccna3-enterprise-security-automation/
+│
+├── packet-tracer/
+│   ├── beginner-labs/
+│   ├── switching/
+│   ├── routing/
+│   ├── wireless/
+│   ├── security/
+│   └── troubleshooting/
+│
+├── network-diagrams/
+│   ├── drawio/
+│   ├── png/
+│   └── exported-pdfs/
+│
+├── troubleshooting/
+│   ├── vlan-issues/
+│   ├── routing-problems/
+│   ├── dhcp-dns/
+│   ├── subnetting-errors/
+│   └── connectivity-tests/
+│
+├── automation/
+│   ├── python/
+│   ├── bash/
+│   ├── ansible/
+│   ├── netmiko/
+│   ├── paramiko/
+│   └── monitoring/
+│
+├── linux/
+│   ├── ubuntu-server/
+│   ├── ssh/
+│   ├── firewall/
+│   ├── bash-scripts/
+│   └── systemd/
+│
+├── docker/
+│   ├── docker-basics/
+│   ├── docker-compose/
+│   └── container-networking/
+│
+├── kubernetes/
+│   ├── pods/
+│   ├── deployments/
+│   ├── services/
+│   └── ingress/
+│
+├── cloud/
+│   ├── aws/
+│   ├── azure/
+│   ├── gcp/
+│   └── terraform/
+│
+└── monitoring/
+    ├── prometheus/
+    ├── grafana/
+    ├── zabbix/
+    └── logs/
+```
+
+---
+
+# 🧠 Networking Study Roadmap | Roadmap de Redes
 
 ```mermaid
 graph TD
     A[OSI & TCP/IP Models] --> B[Ethernet & Switching]
-    B --> C[IPv4/IPv6 Addressing]
+    B --> C[IPv4 & IPv6 Addressing]
     C --> D[Subnetting & ICMP]
-    D --> E[Basic Security & Config]
+    D --> E[Routing Fundamentals]
+    E --> F[VLANs & Switching]
+    F --> G[Network Security]
+    G --> H[Network Automation]
 ```
 
-📂 Repository Structure | Estrutura do Repositório
+---
 
-    /labs: * EN: Cisco Packet Tracer (.pkt) files and topology images.
+# 📚 Current Focus | Foco Atual
 
-        PT: Arquivos do Packet Tracer e imagens de topologia.
+- Cisco CCNA v7
+- Introduction to Networks (ITN)
+- Linux Fundamentals
+- Network Troubleshooting
+- Python for Automation
+- Git & GitHub Workflow
 
-    /notes: * EN: Summary of networking concepts and CLI commands.
+---
 
-        PT: Resumo de conceitos de rede e comandos CLI.
+# 🔬 Labs Included | Laboratórios Inclusos
 
-    /automation: * EN: Python scripts for network configuration and automation.
+## Networking
+- Basic Switch Configuration
+- Router Configuration
+- IPv4 & IPv6 Addressing
+- VLAN Configuration
+- Static Routing
+- ICMP Testing
+- SSH Access
+- Network Security Basics
 
-        PT: Scripts Python para configuração e automação de rede.
+## Infrastructure
+- Linux Administration
+- Bash Automation
+- Docker Networking
+- Infrastructure Documentation
 
-📚 Technical Summary: OSI Model | Resumo Técnico: Modelo OSI
-```mermaid
-graph TD
-    subgraph OSI_MODEL [OSI Reference Model]
-        direction TB
-        L7[7. Application / Aplicação] --> L6[6. Presentation / Apresentação]
-        L6 --> L5[5. Session / Sessão]
-        L5 --> L4[4. Transport / Transporte]
-        L4 --> L3[3. Network / Rede]
-        L3 --> L2[2. Data Link / Enlace]
-        L2 --> L1[1. Physical / Física]
-    end
+## Automation
+- Python Scripts
+- SSH Automation
+- Backup Scripts
+- Connectivity Testing
 
-    %% Estilização para ficar Profissional
-    style L7 fill:#ff1c1c,stroke:#fff,color:#fff
-    style L4 fill:#00ff41,stroke:#000,color:#000
-    style L1 fill:#2196f3,stroke:#fff,color:#fff
-    style OSI_MODEL fill:#f4f4f4,stroke:#333,stroke-width:2px
+---
+
+# 🧩 Example Lab Structure | Estrutura Exemplo de Laboratório
+
+```bash
+module-02-basic-configurations/
+│
+├── README.md
+├── topology.png
+├── topology.pkt
+├── commands.md
+├── troubleshooting.md
+├── notes.md
+└── configs/
+    ├── router-r1.txt
+    └── switch-sw1.txt
 ```
 
-    
-🚀 Professional Goals | Objetivos Profissionais
+---
 
-    [ ] Complete Module 1: Introduction to Networks (ITN)
+# 🚀 Professional Goals | Objetivos Profissionais
 
-    [ ] Implement Network Automation scripts with Python
+- [ ] Complete Cisco CCNA v7
+- [ ] Build a professional networking portfolio
+- [ ] Develop Infrastructure & DevOps skills
+- [ ] Master Linux administration
+- [ ] Learn Cloud & Container technologies
+- [ ] Improve Network Automation skills
+- [ ] Prepare for international IT opportunities
 
-    [ ] Prepare for International IT Market (Japan 2027)
+---
+
+# 📜 Certification Roadmap | Roadmap de Certificações
+
+- Cisco CCNA
+- Linux Essentials
+- Docker Foundations
+- AWS Soluction Architect
+- Cisco DevNet Associate
+- Kubernetes Fundamentals
+
+---
+
+# 📈 Repository Status | Status do Repositório
+
+🚧 Active Development  
+📚 Continuous Learning  
+🔬 Hands-on Labs  
+⚙️ Automation in Progress
+
+---
+
+# 🤝 Contributions
+
+This repository is primarily for personal study and portfolio purposes, but suggestions and discussions are always welcome.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+You are free to study, use, and reference the content for educational purposes.
+
+---
+
+# ⭐ Final Note
+
+> “Learning infrastructure, networking, and automation one lab at a time.”
